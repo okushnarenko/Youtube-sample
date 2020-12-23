@@ -1,7 +1,18 @@
+@import url("fonts.css");
+
 body {
     background: lightpink;
+    font-family: Roboto;
+    font-weight: 100;
 }
 
 .to-right {
     transform: rotate(-90deg);
+}
+
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 700;
 }
