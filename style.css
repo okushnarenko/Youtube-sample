@@ -1,11 +1,42 @@
 @import url("fonts.css");
 
 body {
-    background: lightpink;
+    background: lightblue;
     font-family: Roboto;
     font-weight: 100;
 }
-
+.row {
+    width: 100%;
+    padding: 5px;
+}
+.col-0 {
+    width: 0.1%;
+    float: left;
+}
+.col-1 {
+    float: left;
+    width: 15%;
+    background: white;
+    padding: 10px;
+}
+.col-2 {
+    float: left;
+    width: 81%;
+    background: lightgray;
+    padding: 10px;
+}
+.col-1 div {
+    padding: 5px;
+}
+span {
+    padding-left: 15px; 
+}
+p {
+    font-weight: 300;
+}
+#small-circle {
+    float: right;
+}
 .to-right {
     transform: rotate(-90deg);
 }
@@ -15,4 +46,10 @@ body {
 }
 .bold {
     font-weight: 700;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
