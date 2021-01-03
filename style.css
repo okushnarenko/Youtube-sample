@@ -1,41 +1,120 @@
 @import url("fonts.css");
 
 body {
-    background: lightblue;
+    background: rgb(226, 226, 226);
     font-family: Roboto;
-    font-weight: 100;
+    font-weight: 200;
+    line-height: 14px;
 }
-.row {
-    width: 100%;
-    padding: 5px;
+.header {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
 }
-.col-0 {
-    width: 0.1%;
-    float: left;
+.header a {
+    display: inline-flex;
+    text-decoration: none;
+    margin: 12px 0;
+}
+.header a .icon-left {
+    margin-left: 24px;
+}
+.header a .icon-right{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.header-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header form {
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+}
+.header form .searchbox-input {
+    width: 30vw;
+    height: 30px;
+    padding: 1px 8px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-right: none;
+    box-shadow: inset 0px 4px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 2px 0px 0px 2px;
+}
+.header form .searchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 34px;
+    background: #f8f8f8;
+    border: 1px solid #cccccc;
+    border-radius: 0px 2px 2px 0px;
+    padding: 1px 6px;
 }
 .col-1 {
+    font-size: 14px;
     float: left;
-    width: 15%;
+    height: 150vh;
+    width: 17.1429em;
     background: white;
-    padding: 10px;
+    
 }
-.col-2 {
-    float: left;
-    width: 81%;
-    background: lightgray;
-    padding: 10px;
+.col-1 a {
+    text-decoration: none;  
+    display: block;
+    padding: 0.8571em 0;
+    line-height: 1em;
+    color: black;
 }
-.col-1 div {
-    padding: 5px;
+.col-1 a:hover {
+    background: rgba(0, 0, 0, 0.05);
 }
-span {
-    padding-left: 15px; 
+.col-1 a:active {
+    background: rgba(0, 0, 0, 0.1);
 }
-p {
+.col-1 a svg{
+    fill: #606060;
+}
+.col-1 a:active svg {
+    fill: #f00;
+}
+.col-1 a .icon {
+    display: inline-block;
+    margin-left: 1.8571em;
+    width: 1.4286em;
+    text-align: center;
+    vertical-align: middle;
+}
+.col-1 a .text {
+    margin-left: 1.8571em;
+    display: inline-block;
+    vertical-align: middle;
+}
+hr {
+    margin: 12px 0;
+}
+.col-1 .title {
+    display: inline-block;
+    margin: 0.8571em 0 0.8571em 1.7143em;
+    vertical-align: middle;
     font-weight: 300;
 }
-#small-circle {
-    float: right;
+.col-1-footer-links,
+footer p {
+  padding: 8px;
+  margin-left: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #606060;
+}
+
+footer p {
+  font-weight: normal;
+  color: #e5e5e5;
 }
 .to-right {
     transform: rotate(-90deg);
@@ -52,4 +131,19 @@ p {
     content: "";
     display: table;
     clear: both;
+}
+
+.home{
+ font-size: 1.4286em;
+}
+.fire{
+font-size: 1em;
+}
+.youtube-video {
+    font-size: 1.2143em;
+}
+@media only screen and (max-width: 600px) {
+    .col-1{
+        font-size: 0.7857em;
+    }
 }
