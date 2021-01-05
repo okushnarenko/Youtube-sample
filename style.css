@@ -59,8 +59,10 @@ body {
     float: left;
     height: 150vh;
     width: 17.1429em;
-    background: white;
-    
+    background: white;  
+}
+.col-1.active {
+    width: 5em;
 }
 .col-1 a {
     text-decoration: none;  
@@ -80,6 +82,16 @@ body {
 }
 .col-1 a:active svg {
     fill: #f00;
+}
+
+.col-1.active .text {
+display: none;
+}
+.col-1.active .title{
+    display: none;
+}
+.col-1.active footer{
+    display: none;
 }
 .col-1 a .icon {
     display: inline-block;
